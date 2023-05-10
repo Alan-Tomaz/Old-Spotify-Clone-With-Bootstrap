@@ -1,0 +1,200 @@
+/* ================ LAYOUT ================ */
+
+html,
+body,
+.cover {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    background: url('../img/capa.png'), url('../img/ruido.png'), linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.img-logo {
+    height: 40px;
+    width: 132px;
+    display: block;
+    background-image: url('../img/spotify.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+nav.navbar-transparent {
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: none;
+}
+
+.navbar-brand {
+    padding: 5px 15px;
+}
+
+.divisor {
+    width: 1px;
+    height: 16px;
+    background-color: white;
+    margin: 15px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.footer .nav a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.footer .nav a:hover {
+    color: #9bf0e1;
+    background: none;
+}
+
+/* COVER */
+
+.cover {
+    display: table;
+    width: 100%;
+}
+
+.text-cover {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Buttons */
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    background-color: transparent;
+    transition: .3s;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-custom-purple {
+    background-color: #7c25f8;
+    border: 2px solid #7c25f8;
+}
+
+.btn-custom-purple:hover {
+    border: 2px solid #6207e3;
+    background-color: #6207e3;
+    color: white;
+}
+
+.btn-custom-white {
+    border: 2px solid white;
+}
+
+.btn-custom-white:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Contents */
+
+.services {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.albums {
+    padding: 10px 0;
+}
+
+.resources {
+    padding: 20px 0;
+    color: white;
+}
+
+.rotate {
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+.footer {
+    background-color: #000;
+    padding: 50px 0 20px 0;
+    position: relative;
+}
+
+.media-social-item {
+    float: right;
+}
+
+/* Tipography */
+
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.footer h4 {
+    color: #919496;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.services h2,
+.services h3 {
+    color: #7c25f8;
+}
+
+.resources h3 {
+    color: #9bf0e1;
+}
+
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 100px;
+    }
+}
